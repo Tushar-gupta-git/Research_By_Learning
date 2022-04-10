@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;                     /* Needs to change */
+}
+
+.header{                             /* Backgroud image*/
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pic.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/*To organise the navigation links*/
+.nav-links ul li{                       
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;  
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Button for registration link */
+.hero-btn{            
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* Button properties */
+.hero-btn:hover{                  
+    border: 1px solid red;     
+    background: red;           
+    transition: 1s;
+}
+
+/*To hide the icons from large screen*/
+nav .fa{                                 
+    display: none;
+}
+
+/* This helps us adjust the content according to screen size */
+@media(max-width: 700px)
+{
+    .text-box h1                /*Menu text properties*/
+    {
+        font-size: 20px;
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links                    /*Menu icon properties*/
+    {
+        position: absolute;
+        background: rgb(16, 2, 117);        
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa                     /*Menu text properties*/
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul
+    {
+        padding: 30px;
+
+    }
+
+    nav img                    /*TCC's logo*/
+    {
+        width: 100px;
+    }
+}
+
+/* Rows of all the sections*/
+.Rows
+{
+    display: block;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+
+/* Theme section */
+
+.themes
+{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.theme-col                                                   /*Columns of the themes section*/
+{
+    flex-basis: 31%;
+    background: rgb(19, 196, 196);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.theme-col:hover                                             /*Hovering over the content gives a glowing effect*/
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Rules section*/
+.section
+{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1                                                             /*Headings of Rules*/
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rules-col                                                      /*Columns of the Rules section*/
+{
+    color: black;
+    flex-basis: 31%;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.rules-col:hover                                                 /*Hovering over the content gives a glowing effect*/
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Us section */
+.about
+{
+    padding-top: 100px;
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+/*Faculty Coordinator section*/
+.faculty
+{
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.row-fact                                                       /*Rows of the Faculty section*/
+{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.faculty-col                                                   /*Columns of the Faculty section*/
+{
+    flex-basis: 31%;
+    background: rgb(203, 182, 234);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.faculty-col:hover                                                /*Hovering over the content gives a glowing effect*/
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Perks section*/
+.perks-col
+{
+    color: black;
+    flex-basis: 31%;
+    background-color: rgb(253, 197, 197);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.perks-col:hover                                                 /*Hovering over the content gives a glowing effect*/
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Footer section*/
+.footer
+{
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4
+{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.contacts
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
