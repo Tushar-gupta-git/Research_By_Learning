@@ -8,6 +8,8 @@ This static website is created with the idea in mind that content and requiremen
 It is compatible in every screen size - be it a laptop or a mobile phone.
 In mobile-view, the navigation bar can be accessed by clicking the icons on the top-right part of the screen.
 The present content is divided into rows and columns.
+
+# Salient Features
 Each content has a distinct colour scheme depicting distinct idea.
 A navigation bar is included that takes you to the 'ABOUT US' AND 'CONTACT US' section of the site.
 An extra option like 'Blog' is given in case there's a need in future.
